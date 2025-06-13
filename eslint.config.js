@@ -21,6 +21,7 @@ export default [
       'react-hooks': reactHooks,
     },
     rules: reactHooks.configs.recommended.rules,
+    '@typescript-eslint/no-empty-object-type': 'off',
   },
 
   {
