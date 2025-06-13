@@ -1,8 +1,10 @@
+import { HeaderContainer } from './styles';
+
 const Header = () => {
   return (
-    <div>
-      <div>Olá</div>
-    </div>
+    <HeaderContainer>
+      <div>Header</div>
+    </HeaderContainer>
   );
 };
 
