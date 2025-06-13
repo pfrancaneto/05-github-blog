@@ -1,9 +1,24 @@
-import { HomeContainer } from './styles';
+import DescriptionProfile from './components/DescriptionProfile';
+import SocialMedia from './components/SocialMedia';
+
+import Avatar from '../../assets/avatar.svg';
+
+import {
+  HomeContainer,
+  ProfileContainer,
+  ProfileInfoContainer,
+} from './styles';
 
 const Home = () => {
   return (
     <HomeContainer>
-      <div>Home</div>
+      <ProfileContainer>
+        <img src={Avatar} alt="Avatar do Profile" />
+        <ProfileInfoContainer>
+          <DescriptionProfile />
+          <SocialMedia />
+        </ProfileInfoContainer>
+      </ProfileContainer>
     </HomeContainer>
   );
 };
