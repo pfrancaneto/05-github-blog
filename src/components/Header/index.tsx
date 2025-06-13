@@ -1,9 +1,11 @@
+import Cover from '../../assets/Cover.svg';
+
 import { HeaderContainer } from './styles';
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <div>Header</div>
+      <img src={Cover} alt="Logo Blog" />
     </HeaderContainer>
   );
 };
