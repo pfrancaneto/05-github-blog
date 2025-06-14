@@ -15,7 +15,7 @@ const SocialMedia = () => {
       </span>
       <span>
         <UsersIcon size={18} weight="fill" color="#3A536B" />
-        cameronwll
+        32 seguidores
       </span>
     </SocialMediaContainer>
   );
