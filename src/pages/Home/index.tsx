@@ -10,6 +10,7 @@ import {
   RepositoryCard,
 } from './styles';
 import CardPost from './components/CardPost';
+import SearchPublication from './components/SearchPublication';
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
           <SocialMedia />
         </ProfileInfoContainer>
       </ProfileContainer>
+      <SearchPublication />
       <RepositoryCard>
         <CardPost />
         <CardPost />
