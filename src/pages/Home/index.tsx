@@ -7,7 +7,9 @@ import {
   HomeContainer,
   ProfileContainer,
   ProfileInfoContainer,
+  RepositoryCard,
 } from './styles';
+import CardPost from './components/CardPost';
 
 const Home = () => {
   return (
@@ -19,6 +21,10 @@ const Home = () => {
           <SocialMedia />
         </ProfileInfoContainer>
       </ProfileContainer>
+      <RepositoryCard>
+        <CardPost />
+        <CardPost />
+      </RepositoryCard>
     </HomeContainer>
   );
 };
