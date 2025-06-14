@@ -26,6 +26,8 @@ const Home = () => {
       <RepositoryCard>
         <CardPost />
         <CardPost />
+        <CardPost />
+        <CardPost />
       </RepositoryCard>
     </HomeContainer>
   );

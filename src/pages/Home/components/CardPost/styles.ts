@@ -16,6 +16,10 @@ export const CardPostContainer = styled.div`
   &:hover {
     border: 2px solid ${(props) => props.theme['base-label']};
   }
+
+  &:last-child {
+    margin: 0 0 5rem;
+  }
 `;
 
 export const CardPostHeader = styled.header`
