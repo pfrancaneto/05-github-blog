@@ -1,27 +1,13 @@
-import DescriptionProfile from './components/DescriptionProfile';
-import SocialMedia from './components/SocialMedia';
-
-import Avatar from '../../assets/avatar.svg';
-
-import {
-  HomeContainer,
-  ProfileContainer,
-  ProfileInfoContainer,
-  RepositoryCard,
-} from './styles';
 import CardPost from './components/CardPost';
+import Profile from './components/Profile';
 import SearchPublication from './components/SearchPublication';
+
+import { HomeContainer, RepositoryCard } from './styles';
 
 const Home = () => {
   return (
     <HomeContainer>
-      <ProfileContainer>
-        <img src={Avatar} alt="Avatar do Profile" />
-        <ProfileInfoContainer>
-          <DescriptionProfile />
-          <SocialMedia />
-        </ProfileInfoContainer>
-      </ProfileContainer>
+      <Profile />
       <SearchPublication />
       <RepositoryCard>
         <CardPost />
