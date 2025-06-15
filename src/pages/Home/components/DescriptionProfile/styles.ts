@@ -18,7 +18,7 @@ export const TitleDescription = styled.div`
     color: ${(props) => props.theme['base-title']};
   }
 
-  span {
+  > a {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -26,6 +26,7 @@ export const TitleDescription = styled.div`
     font-weight: bold;
     color: ${(props) => props.theme.blue};
     text-transform: uppercase;
+    text-decoration: none;
     cursor: pointer;
   }
 `;

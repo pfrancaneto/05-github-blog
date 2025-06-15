@@ -1,5 +1,7 @@
 import { ArrowSquareOutIcon } from '@phosphor-icons/react';
 
+import { useGithubBlog } from '../../../../context/GithubBlogContext';
+
 import {
   Description,
   DescriptionProfileContainer,
@@ -7,20 +9,18 @@ import {
 } from './styles';
 
 const DescriptionProfile = () => {
+  const { dataBlog } = useGithubBlog();
+
   return (
     <DescriptionProfileContainer>
       <TitleDescription>
-        <strong>Cameron Williamson</strong>
-        <span>
+        <strong>{dataBlog.name}</strong>
+        <a href="https://github.com/pfrancaneto" target="_blank">
           github
           <ArrowSquareOutIcon size={15} weight="bold" />
-        </span>
+        </a>
       </TitleDescription>
-      <Description>
-        Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu viverra
-        massa quam dignissim aenean malesuada suscipit. Nunc, volutpat pulvinar
-        vel mass.
-      </Description>
+      <Description>{dataBlog.bio}</Description>
     </DescriptionProfileContainer>
   );
 };

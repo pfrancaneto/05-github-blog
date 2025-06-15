@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const ProfileInfoContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-`;
-
 export const ProfileContainer = styled.section`
   width: 100%;
   max-width: 54rem;
@@ -21,4 +15,18 @@ export const ProfileContainer = styled.section`
   display: flex;
   align-items: center;
   gap: 2rem;
+
+  img {
+    width: 9.25rem;
+    height: 9.25rem;
+    border: 0;
+    border-radius: 8px;
+    display: block;
+  }
+`;
+
+export const ProfileInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 `;
