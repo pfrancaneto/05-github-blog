@@ -1,3 +1,6 @@
+import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
 import { Code, ResumeIssueContainer, SummaryBody } from './styles';
 
 const ResumeIssue = () => {
@@ -14,9 +17,12 @@ const ResumeIssue = () => {
         and any variable can be assigned (and re-assigned) values of all types:
       </SummaryBody>
       <Code>
-        let foo = 42; // foo is now a number <br />
-        foo = ‘bar’; // foo is now a string <br />
-        foo = true; // foo is now a boolean
+        <Markdown remarkPlugins={[remarkGfm]}>
+          # GFM ## Autolink literals www.example.com, https://example.com, and
+          contact@example.com. ## Footnote A note[^1] [^1]: Big note. ##
+          Strikethrough ~one~ or ~~two~~ tildes. ## Table | a | b | c | d | | -
+          | :- | -: | :-: | ## Tasklist * [ ] to do * [x] done
+        </Markdown>
       </Code>
     </ResumeIssueContainer>
   );
