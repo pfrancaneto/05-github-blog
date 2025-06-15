@@ -3,14 +3,17 @@ import { defaultTheme } from './styles/theme/default';
 import { GlobalStyle } from './styles/global';
 import { BrowserRouter } from 'react-router-dom';
 import Router from './Router';
+import { GithubBlogContextProvider } from './context/GithubBlogContext';
 
 const App = () => {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
-      <GlobalStyle />
+      <GithubBlogContextProvider>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
+        <GlobalStyle />
+      </GithubBlogContextProvider>
     </ThemeProvider>
   );
 };
